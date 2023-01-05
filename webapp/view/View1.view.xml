@@ -1,0 +1,112 @@
+<mvc:View
+    controllerName="test.teste.controller.View1" 
+	xmlns:html="http://www.w3.org/1999/xhtml" 
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" 
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m" 
+	xmlns:dnd="sap.ui.core.dnd" 
+	xmlns:control="test.teste.controller.DragNDrop.controls">
+	<!-- <Shell> -->
+	<SplitApp>
+			
+		<masterPages>
+		<Page>
+			<List headerText="To do List">
+
+			</List>
+			<List headerText="Consultas">
+
+			</List>
+
+		</Page>
+		</masterPages>
+
+		<detailPages>
+			<Page title="{i18n>title}" titleAlignment="Center" >
+				<content>
+					<ScrollContainer
+					height="100%"
+					width="100%"
+					vertical="true"
+					focusable="true">
+						<Table id="table"
+					  fixedLayout="false"
+					  items="{/People}">
+							<!-- <dragDropConfig>
+								<dnd:DragInfo sourceAggregation="cells"/>
+							</dragDropConfig> -->
+							<columns>
+								<Column>
+										<Text width="200px"  text="Aguardando Prontidão/Pagamento"/>
+								</Column>
+								<Column>
+										<Text width="200px"  text="Em Embarque"/>
+								</Column>
+								<Column>
+										<Text width="200px"  text="Chegada Confirmada/Presença de Carga"/>
+								</Column>
+								<Column>
+										<Text width="200px"  text="Carga em Desembaraço"/>
+								</Column>
+								<Column  >
+										<Text width="200px" text="Carga Nacionalizada"/>
+								</Column>
+								<Column>
+										<Text width="200px" text="Em Carregamento"/>
+								</Column>
+								<Column>
+										<Text width="200px" text="Entregue na Planta/Embarcado (EX)"/>
+								</Column>
+								<Column>
+										<Text width="200px" text="Encerrado"/>
+								</Column>
+								<Column>
+										<Text width="200px" text="Concluído/Cancelado"/>
+								</Column>
+							</columns>
+							<items>
+								<ColumnListItem>
+									<cells>
+										<Text text="{UserName}"/>
+										<control:Panel>
+											<control:dragDropConfig>
+												<dnd:DropInfo drop="onDrop"/>
+											</control:dragDropConfig>
+										</control:Panel>
+									</cells>
+								</ColumnListItem>
+								<ColumnListItem>
+									<cells>
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+										<core:Fragment fragmentName="test.teste.view.QuickViewCard" type="XML" />
+									</cells>
+								</ColumnListItem>
+							</items>
+						</Table>
+					</ScrollContainer>
+				</content>
+					<footer>
+					<Bar>
+						<contentMiddle>
+							<control:DeleteButton id="deleteButtonId" text="Delete" type="Reject" icon="sap-icon://delete" width="30%">
+								<control:dragDropConfig>
+									<!-- <dnd:DropInfo drop="onDrop"/> -->
+									<dnd:DragInfo drag="onDrop"/>
+								</control:dragDropConfig>
+							</control:DeleteButton>
+						</contentMiddle>
+					</Bar>
+				</footer>
+			</Page>
+			</detailPages>
+		</SplitApp>
+	<!-- </Shell> -->
+</mvc:View>

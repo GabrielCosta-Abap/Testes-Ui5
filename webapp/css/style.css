@@ -1,0 +1,51 @@
+/* Enter your custom styles here */
+
+.sapMPageScroll{
+    background: -moz-linear-gradient(top,  #10d110 0%, #c2ec05 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#05e205), color-stop(100%,#c9f30c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #06e206 0%,#070bec 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #08eb08 0%,#0d48ec 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #05f105 0%,#0615ee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #0af10a 0%,#0917e0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0917e0', endColorstr='#0917e0',GradientType=0 ); /* IE6-8 */
+    }
+    .sapMGlobalBackgroundColor{background-image:linear-gradient(to bottom,#12d473 0,#05e905 100%);}
+    .sapMGlobalBackgroundImage{background-image:none;}
+
+    /* Este trecho define a cor das barras de título */
+    .sap-desktop .sapMBar.sapMPageHeader{background-color:#e71919 !important; } 
+    .sapMBar-CTX .sapMLabel{color:#25cc20;}
+    .sapMTile{
+      -moz-border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -khtml-border-radius: 10px;
+      border-radius: 10px;
+    background: -moz-linear-gradient(top,  #1de20c 0%, #04e216 47%, #07ec07 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#08e738), color-stop(47%,#03e00e), color-stop(100%,#0312e4)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #041dfa 0%,#1d0ee9 47%,#1a04e4 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #0b48f0 0%,#3805f0 47%,#3703f0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #3106f1 0%,#3004f5 47%,#3005ee 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1405ec 0%,#3606e2 47%,#060aec 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1809f7', endColorstr='#1809f7',GradientType=0 ); /* IE6-8 */}
+    .sapMPullDown{background-color:#4607f5;}
+    .sapMList .sapMLIB.sapMGHLI{background-color:#3207f5;}
+    .sapMBar-CTX .sapMBtnContent>.sapUiIcon,.sapMBar-CTX .sapMBtn{color:#4c08ec;}
+    .sapMPageHeader.sapMBar-CTX .sapMBtn, .sapMPageHeader.sapMBar-CTX .sapMSlt{border-image:linear-gradient(#b60909 8.33%,#df0e0e 8.33%) 0 100%;}
+    .sapMSplitContainerMaster:not(.sapMSplitContainerMasterVisible):before{border-right:1px solid #d40b0b;}
+    .sapMShellBrandingBar{background-color:#e70909;}
+    .sapMBar.sapMPageHeader:before{border-top:0.25rem solid #b81010;}
+    .sapMFooter-CTX .sapMSegBBtn{border-color:#df0505;}
+    .sap-desktop footer.sapMBar, .sap-desktop footer.sapMBar.sapMBarTranslucent{background-color:#ee1717 !important;}
+    .sapUshellTileInner{ -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+     -khtml-border-radius: 10px;
+    border-radius: 10px;
+    border:1px solid rgb(230, 10, 10);
+    background: -moz-linear-gradient(top,  #2f03f1 0%, #4002eb 47%, #2e02f1 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3802fa), color-stop(47%,#1809f7), color-stop(100%,#1404ec)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #2109f8 0%,#4504f8 47%,#3004f1 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #6106f3 0%,#2807e9 47%,#1708e9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #0b07ee 0%,#3206f8 47%,#0b07f1 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #1404f0 0%,#3a07f0 47%,#3403e6 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1809f7', endColorstr='#1809f7',GradientType=0 ); /* IE6-8 */}
+    
